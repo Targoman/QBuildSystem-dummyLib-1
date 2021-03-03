@@ -11,6 +11,7 @@
  */
 #include "clsSample.h"
 #include "Private/clsSample_p.hpp"
+#include "ISO639.h"
 
 namespace DummyLib1 {
 
@@ -25,7 +26,7 @@ clsSample::~clsSample()
 
 QString clsSample::info()
 {
-    return this->Data->SampleString;
+    return this->Data->SampleString + ISO639getName("fa");
 }
 
 }
